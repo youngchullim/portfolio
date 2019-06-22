@@ -557,13 +557,13 @@
                   <img class="mySlides" src="img/portfolio/modify2.png" style="width:100%">
                   <img class="mySlides" src="img/portfolio/modify3.png" style="width:100%">
                   <img class="mySlides" src="img/portfolio/modify4.png" style="width:100%">
-                  <div class="w3-center w3-container w3-section w3-large w3-text-black " style="width:100%">
+                  <div class="w3-center w3-container w3-section w3-large w3-text-black button-flex" style="width:100%">
                     <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
                     <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-                    <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(1)"></span>
+                    <!-- <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(1)"></span>
                     <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(2)"></span>
                     <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(3)"></span>
-                    <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(4)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(4)"></span> -->
                   </div>
                 </div>
 <!-- IMAGE SLIDES END -->
@@ -607,13 +607,13 @@
                   <img class="mySlides2" src="img/portfolio/picook3.png" style="width:100%">
                   <img class="mySlides2" src="img/portfolio/picook4.png" style="width:100%">
                   <img class="mySlides2" src="img/portfolio/picook5.png" style="width:100%">
-                  <div class="w3-center w3-container w3-section w3-large w3-text-black " style="width:100%">
+                  <div class="w3-center w3-container w3-section w3-large w3-text-black button-flex" style="width:100%">
                     <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
                     <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-                    <span class="w3-badge demo2 w3-border w3-transparent w3-hover-black" onclick="currentDiv(1)"></span>
+                    <!-- <span class="w3-badge demo2 w3-border w3-transparent w3-hover-black" onclick="currentDiv(1)"></span>
                     <span class="w3-badge demo2 w3-border w3-transparent w3-hover-black" onclick="currentDiv(2)"></span>
                     <span class="w3-badge demo2 w3-border w3-transparent w3-hover-black" onclick="currentDiv(3)"></span>
-                    <span class="w3-badge demo2 w3-border w3-transparent w3-hover-black" onclick="currentDiv(4)"></span>
+                    <span class="w3-badge demo2 w3-border w3-transparent w3-hover-black" onclick="currentDiv(4)"></span> -->
                   </div>
                 </div>
 <!-- IMAGE SLIDES END -->
@@ -789,6 +789,54 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.min.js"></script>
+
+
+  <!-- <script>
+    let slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+      let i;
+      let x = document.getElementsByClassName("mySlides");
+      let y = document.getElementsByClassName("mySlides2");
+      
+      let dots = document.getElementsByClassName("demo");
+      let dots2 = document.getElementsByClassName("demo2");
+      
+      if (n > x.length) {
+        slideIndex = 1;
+      }
+
+      if (n < 1) {
+        slideIndex = x.length;
+      }
+
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+        y[i].style.display = "none";  
+      }
+
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-black", "");
+        dots2[i].className = dots2[i].className.replace(" w3-black", "");
+      }
+      
+      x[slideIndex-1].style.display = "block";  
+      y[slideIndex-1].style.display = "block";  
+
+      dots[slideIndex-1].className += " w3-black";
+      dots2[slideIndex-1].className += " w3-black";
+    }
+  
+  </script> -->
 
 </body>
 

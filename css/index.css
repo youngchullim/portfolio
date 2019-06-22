@@ -46,3 +46,8 @@
   width: 13px;
   padding: 0
 }
+
+.button-flex {
+  display: flex;
+  justify-content: space-around;
+}
